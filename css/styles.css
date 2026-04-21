@@ -1,0 +1,201 @@
+/* --- ЗМІННІ КОЛЬОРІВ --- */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --bg-dark-color: #2f303a;
+  --bg-light-color: #f5f4fa;
+  --icon-color: #afb1b8;
+}
+
+/* --- ГЛОБАЛЬНІ СКИДАННЯ ТА БАЗОВІ СТИЛІ --- */
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+  line-height: 1.2; /* Використовуємо множник */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* --- ЛОГОТИП --- */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--title-text-color);
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+.footer-logo {
+  color: var(--white-color);
+}
+
+/* --- НАВІГАЦІЯ ТА ШАПКА --- */
+.site-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav-link:hover,
+.site-nav-link:focus,
+.site-nav-link.current {
+  color: var(--accent-color);
+}
+
+.auth-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+  color: var(--accent-color);
+}
+
+/* --- ГОЛОВНИЙ ЕКРАН (HERO) --- */
+.hero {
+  background-color: var(--bg-dark-color);
+  text-align: center;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+/* --- СЕКЦІЇ ТА ЗАГОЛОВКИ --- */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+/* ПЕРЕВАГИ */
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.features-icon-box {
+  background-color: var(--bg-light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+/* КОМАНДА */
+.team {
+  background-color: var(--bg-light-color);
+}
+.team-item {
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--title-text-color);
+}
+.team-role {
+  font-size: 16px;
+}
+
+/* СОЦМЕРЕЖІ */
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-color);
+  background-color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link svg {
+  fill: currentColor;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* --- ПІДВАЛ --- */
+.footer {
+  background-color: var(--bg-dark-color);
+}
+.address-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white-color);
+}
+.address-link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
