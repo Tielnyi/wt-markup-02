@@ -50,6 +50,21 @@ img {
   overflow: hidden;
 }
 
+/* --- КОНТЕЙНЕР ДЛЯ ЦЕНТРУВАННЯ --- */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Відступи для всіх секцій */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* --- ЛОГОТИП --- */
 .logo {
   font-family: "Raleway", sans-serif;
